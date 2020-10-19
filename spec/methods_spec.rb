@@ -15,6 +15,5 @@ describe Game do
         it 'return false if the move is not a number' do
             expect(new_game.make_move(player.team, 12)).to eql FALSE
         end
-
     end
 end
