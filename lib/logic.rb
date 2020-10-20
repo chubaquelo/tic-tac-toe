@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Lint/RedundantCopDisableDirective
+
 # Saving Player information
 class Player
   attr_accessor :name, :team
@@ -53,3 +55,5 @@ class Game
     puts '+---+---+---+----+---+---+----+'
   end
 end
+
+# rubocop:enable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Lint/RedundantCopDisableDirective
