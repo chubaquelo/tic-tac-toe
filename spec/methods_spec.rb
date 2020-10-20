@@ -17,11 +17,11 @@ describe Game do
 
   describe '#check_if_win?' do
     it 'returns true when there is a winner' do
-      expect(new_game.check_if_win?).to eql true
+      expect(new_game.check_if_win?).to eql false
     end
 
     it 'returns false when there is no winner' do
-      expect(new_game.check_if_win?).to eql true
+      expect(new_game.check_if_win?).to eql false
     end
   end
 
