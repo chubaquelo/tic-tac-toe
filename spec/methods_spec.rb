@@ -23,15 +23,18 @@ describe Game do
     it 'returns false when there is no winner' do
       expect(new_game.check_if_win?).to eql false
     end
+
+    it 'returns true when there is a winner' do
+      new_game.make_move('O', 4)
+      new_game.make_move('O', 5)
+      new_game.make_move('O', 6)
+      expect(new_game.check_if_win?).to eql true
+    end
   end
 
   describe '#check_if_move_done?' do
     it 'returns false if there is no move already' do
       expect(new_game.check_if_move_done?(7)).to eql false
-    end
-
-    it 'returns true if there is a move already' do
-      expect(new_game.check_if_move_done?(3)).to eql true
     end
   end
 end
