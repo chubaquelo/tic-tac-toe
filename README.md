@@ -11,10 +11,9 @@ Ruby
 ## How to run
 
 1. Open Terminal.
-2.  Write git clone https://github.com/deikdesign/tic-tac-toe
+2. Write git clone https://github.com/deikdesign/tic-tac-toe
 3. Go to the root directory.
 4. Write "ruby ./bin/main.rb" in terminal.
-
 
 Required: be sure to have ruby and git installed on your computer.
 
@@ -40,6 +39,21 @@ Win examples for "X":
 
 ![Tic-Tac-Toe](https://i.imgur.com/DIBNh8H.png)
 
+## Test Instructions
+
+If you'd like to test the public methods on the game, you can do it using Rspec (already implemented on the code).<br>
+For that, once the project is cloned in your computer, you need to go to the folder of the project in your terminal.
+
+`$ cd <folder>`
+
+Once inside the project folder, just type:
+
+`$ rspec`
+
+And you will receive the results for our rspec tests like this:
+
+![Test Results](https://i.imgur.com/8rIBwV8.jpg)
+
 ## Authors
 
 👤 **Sergio Obolevich**
@@ -47,10 +61,11 @@ Win examples for "X":
 - Github: [@githubhandle](https://github.com/chubaquelo)
 - Twitter: [@twitterhandle](https://twitter.com/SergioObolevich)
 
-👤 **Deyan Todorov**
+👤 **Kinglsey Ibeh**
 
-- Github: [@deikdesign](https://github.com/deikdesign)
-- Twitter: [@deikdesign](https://twitter.com/deikdesign)
+- Github: [@githubhandle](https://github.com/Kingobaino1)
+- Twitter: [@twitterhandle](https://twitter.com/ibehkingso)
+- Linkedin: [linkedin](https://www.linkedin.com/in/ibeh-kingsley-obinna-568596177)
 
 ## 🤝 Contributing
 

@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Lint/RedundantCopDisableDirective
+
 # Saving Player information
 class Player
   attr_accessor :name, :team
@@ -12,19 +14,21 @@ class Game
   attr_reader :board, :moves_done
   def initialize
     @board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    @moves_done = []
+    @moves_done = [3]
   end
 
   def make_move(team, move)
+    return false if !move.is_a?(Integer) || !(1..9).include?(move)
+
     if (team == 'X') && @moves_done.none?(move)
       @board[move - 1] = 'X'
-      @moves_done.push(move)
-      true
+      return true
     elsif (team == 'O') && @moves_done.none?(move)
       @board[move - 1] = 'O'
-      @moves_done.push(move)
       true
     end
+
+    @moves_done.push(move)
     false
   end
 
@@ -51,3 +55,5 @@ class Game
     puts '+---+---+---+----+---+---+----+'
   end
 end
+
+# rubocop:enable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Lint/RedundantCopDisableDirective
