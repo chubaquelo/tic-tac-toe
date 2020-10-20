@@ -11,10 +11,9 @@ Ruby
 ## How to run
 
 1. Open Terminal.
-2.  Write git clone https://github.com/deikdesign/tic-tac-toe
+2. Write git clone https://github.com/deikdesign/tic-tac-toe
 3. Go to the root directory.
 4. Write "ruby ./bin/main.rb" in terminal.
-
 
 Required: be sure to have ruby and git installed on your computer.
 
@@ -64,8 +63,9 @@ And you will receive the results for our rspec tests like this:
 
 👤 **Kinglsey Ibeh**
 
-- Github: [@deikdesign](https://github.com/deikdesign)
-- Twitter: [@deikdesign](https://twitter.com/deikdesign)
+- Github: [@githubhandle](https://github.com/Kingobaino1)
+- Twitter: [@twitterhandle](https://twitter.com/ibehkingso)
+- Linkedin: [linkedin](https://www.linkedin.com/in/ibeh-kingsley-obinna-568596177)
 
 ## 🤝 Contributing
 

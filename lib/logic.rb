@@ -1,3 +1,5 @@
+# rubocop:disable Style/GuardClause
+
 # Saving Player information
 class Player
   attr_accessor :name, :team
@@ -27,6 +29,7 @@ class Game
       @moves_done.push(move)
       true
     end
+
     false
   end
 
@@ -53,3 +56,5 @@ class Game
     puts '+---+---+---+----+---+---+----+'
   end
 end
+
+# rubocop:enable Style/GuardClause
