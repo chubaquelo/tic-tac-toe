@@ -1,5 +1,3 @@
-# rubocop:disable Style/GuardClause
-
 # Saving Player information
 class Player
   attr_accessor :name, :team
@@ -18,18 +16,17 @@ class Game
   end
 
   def make_move(team, move)
-    if !move.is_a?(Integer) || !(1..9).include?(move)
-      return false
-    elsif (team == 'X') && @moves_done.none?(move)
+    return false if !move.is_a?(Integer) || !(1..9).include?(move)
+
+    if (team == 'X') && @moves_done.none?(move)
       @board[move - 1] = 'X'
-      @moves_done.push(move)
       return true
     elsif (team == 'O') && @moves_done.none?(move)
       @board[move - 1] = 'O'
-      @moves_done.push(move)
       true
     end
 
+    @moves_done.push(move)
     false
   end
 
@@ -56,5 +53,3 @@ class Game
     puts '+---+---+---+----+---+---+----+'
   end
 end
-
-# rubocop:enable Style/GuardClause
